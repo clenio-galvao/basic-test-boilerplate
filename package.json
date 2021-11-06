@@ -9,6 +9,7 @@
     "deploy": "yarn build && surge"
   },
   "dependencies": {
+    "node-fetch": "^3.0.0",
     "parcel": "1.12.4",
     "surge": "^0.23.0"
   },

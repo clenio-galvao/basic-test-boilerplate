@@ -128,4 +128,8 @@ select {
   margin-bottom: 5%;
 }
 
+.no-show {
+  display: none;
+}
+
 /*# sourceMappingURL=styles.css.map */
