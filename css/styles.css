@@ -1,0 +1,89 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #797979;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #75BC97;
+  height: 480px;
+}
+.header-leaves {
+  background-image: url("../images/hero/desktop/left-leaves.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 55%;
+}
+.header-leaves-info {
+  margin: 12% 36%;
+  max-width: 50%;
+}
+.header-leaves-info-logo {
+  max-width: 50%;
+}
+.header-leaves-info-title {
+  color: #FFFFFF;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-top: 7%;
+}
+.header-leaves-info-arrow {
+  margin-top: 5%;
+  max-width: 8%;
+}
+.header-plantperson {
+  background-image: url("../images/hero/desktop/plantperson.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 22%;
+}
+.header-leaves2 {
+  background-image: url("../images/hero/desktop/right-leaves.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 23%;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+}
+.filters-cards {
+  margin: 5% 20%;
+}
+.filters-cards-sun {
+  max-width: 30%;
+}
+.filters-cards-sun-img {
+  max-width: 25%;
+}
+.filters-cards-sun-title {
+  margin-bottom: 7%;
+  margin-top: 5%;
+}
+
+select {
+  background-color: #FFFFFF;
+  border: 1px solid #797979;
+  border-radius: 20px;
+  height: 40px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(../images/icons/fill.png) no-repeat center right;
+}
+
+/*# sourceMappingURL=styles.css.map */

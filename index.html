@@ -8,10 +8,32 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./index.scss" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
-    <img src="images/icons/logo-white.svg" alt="Greenthumb" />
+    <header class="header">
+      <div class="header-leaves">
+        <div class="header-leaves-info">
+          <img class="header-leaves-info-logo" src="images/icons/logo-white.svg" alt="Greenthumb" />
+          <div class="header-leaves-info-title">Find your next green friend</div>
+          <img class="header-leaves-info-arrow" src="images/icons/arrow-down.svg" alt="ArrowDown" />
+        </div>
+      </div>
+      <div class="header-plantperson"></div>
+      <div class="header-leaves2"></div>
+    </header>
+    <main>
+      <div class="filters">
+        <div class="filters-cards">
+          <div class="filters-cards-sun">
+            <img class="filters-cards-sun-img" src="images/illustrations/sun.png" alt="Sun" />
+            <div class="filters-cards-sun-title"><strong>1.</strong> Set the amount of <strong>sunlight</strong><br>
+            your plant will get</div>
+            <select class="filters-cards-sun-select" aria-placeholder="Select..."></select>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

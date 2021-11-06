@@ -1,0 +1,76 @@
+@use 'variables'
+@use 'mixins'
+
+*
+  font-family: "Montserrat", sans-serif
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  width: 100%
+
+body
+  background-color: variables.$bg-color
+  color: variables.$text-color
+
+.header
+  @include mixins.container
+  background-color: variables.$bg-color-header
+  height: 480px
+
+  &-leaves
+    @include mixins.bg-img('hero/desktop/left-leaves.png')
+    max-width: 55%
+
+    &-info
+      margin: 12% 36%
+      max-width: 50%
+
+      &-logo
+        max-width: 50%
+
+      &-title
+        color: variables.$text-color-header
+        font-size: 3.5rem
+        font-weight: bold
+        margin-top: 7%
+      
+      &-arrow
+        margin-top: 5%
+        max-width: 8%
+
+  &-plantperson
+    @include mixins.bg-img('hero/desktop/plantperson.png')
+    max-width: 22%
+
+  &-leaves2
+    @include mixins.bg-img('hero/desktop/right-leaves.png')
+    max-width: 23%
+
+.filters
+  @include mixins.container
+  height: 300px
+
+  &-cards
+    margin: 5% 20%
+
+    &-sun
+      max-width: 30%
+
+      &-img
+        max-width: 25%
+
+      &-title
+        margin-bottom: 7%
+        margin-top: 5%
+
+select
+  background-color: variables.$bg-color
+  border: 1px solid variables.$text-color
+  border-radius: 20px
+  height: 40px
+  appearance: none
+  -webkit-appearance: none
+  -moz-appearance: none
+  background: url(../images/icons/fill.png) no-repeat center right 
+
+
