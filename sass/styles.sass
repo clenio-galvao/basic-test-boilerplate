@@ -47,30 +47,69 @@ body
     max-width: 23%
 
 .filters
-  @include mixins.container
   height: 300px
 
   &-cards
-    margin: 5% 20%
+    @include mixins.container
+    justify-content: center
+    max-width: 80%
+    margin-left: 10%
 
-    &-sun
+    &-card
+      margin: 4% 4%
+      max-width: 20%
+
+      &-header
+        height: 90px
+
+      &-header
+        height: 80px
+
+    &-img
       max-width: 30%
 
-      &-img
-        max-width: 25%
-
-      &-title
-        margin-bottom: 7%
-        margin-top: 5%
+    &-title
+      margin-bottom: 7%
+      margin-top: 5%
 
 select
   background-color: variables.$bg-color
-  border: 1px solid variables.$text-color
+  border: 1px solid variables.$border-color
   border-radius: 20px
   height: 40px
   appearance: none
   -webkit-appearance: none
   -moz-appearance: none
-  background: url(../images/icons/fill.png) no-repeat center right 
+  background: url(../images/icons/fill8.png) no-repeat center right 
 
+.cards
+  background-color: variables.$bg-color-cards
+  // max-width: 100%
 
+  &-no-result
+    @include mixins.container
+    padding-top: 5%
+
+    &-left
+      margin-left: 25%
+      margin-right: 5%
+      max-width: 30%
+
+      &-title
+        font-size: 3rem
+        font-weight: bold
+        margin-top: 5%
+
+      &-text
+        font-size: 1.2rem
+        font-weight: light
+        margin-top: 5%
+        max-width: 55%
+        line-height: 2rem
+
+    &-rigth
+      align-items: center
+
+      &-img
+        max-width: 20%
+        margin-bottom: 5%
