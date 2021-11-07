@@ -15,11 +15,12 @@ body
 .header
   @include mixins.container
   background-color: variables.$bg-color-header
-  height: 480px
+  height: 420px
 
   &-leaves
     @include mixins.bg-img('hero/desktop/left-leaves.png')
     max-width: 55%
+    height: 100%
 
     &-info
       margin: 12% 36%
@@ -40,24 +41,25 @@ body
 
   &-plantperson
     @include mixins.bg-img('hero/desktop/plantperson.png')
-    max-width: 22%
+    max-width: 20%
 
   &-leaves2
     @include mixins.bg-img('hero/desktop/right-leaves.png')
     max-width: 23%
 
 .filters
+  background-color: variables.$bg-color-filter
   height: 300px
 
   &-cards
     @include mixins.container
     justify-content: center
     max-width: 80%
-    margin-left: 10%
+    margin-left: 12%
 
     &-card
       margin: 4% 4%
-      max-width: 20%
+      max-width: 22%
 
       &-header
         height: 90px
@@ -76,18 +78,18 @@ select
   background-color: variables.$bg-color
   border: 1px solid variables.$border-color
   border-radius: 20px
+  font-family: "Montserrat", sans-serif
   height: 40px
   appearance: none
   -webkit-appearance: none
   -moz-appearance: none
   background: url(../images/icons/fill8.png) no-repeat center right 
 
-.cards
-  background-color: variables.$bg-color-cards
-  // max-width: 100%
+.plants
 
   &-no-result
     @include mixins.container
+    flex-wrap: nowrap
     padding-top: 5%
 
     &-left
@@ -113,6 +115,113 @@ select
       &-img
         max-width: 20%
         margin-bottom: 5%
+  
+  &-cards
+    @include mixins.container
+    padding: 0 20%
+
+    &-img
+      margin: 5% 0 0
+      max-width: 20%
+    
+    &-text
+      color: variables.$text-color-cards
+      font-size: 2rem
+      font-weight: bold
+      margin-bottom: 5%
+
+    &-container
+      display: grid
+      grid-template-columns: repeat(4, 1fr)
+      grid-template-rows: auto
+      grid-gap: 2%
+
+      &-card-favorite
+        @include mixins.container
+        background-color: variables.$bg-color-filter
+        margin: 1%
+        border-radius: 10px
+        justify-content: center
+        grid-column: 1/ span 2
+        grid-row: 1/ span 2
+
+        &-img
+          max-width: 60%
+
+        &-title
+          font-size: 2rem
+          color: variables.$text-color-cards
+          font-weight: bold
+          margin: 5% 0 0 5%
+        
+        &-price
+          @include mixins.textContainer
+
+      &-card
+        @include mixins.container
+        background-color: variables.$bg-color-filter
+        margin: 1%
+        border-radius: 10px
+        justify-content: center
+
+        &-img
+          max-width: 60%
+
+        &-title
+          @include mixins.textContainer
+          margin-left: 5%
+        
+        &-price
+          @include mixins.textContainer
+
+        &-header
+          @include mixins.container
+          height: 70%
+          justify-content: center
+
+        &-more-info
+          @include mixins.container
+          flex-wrap: nowrap
+          justify-content: center
+          margin: 0 3%
+
+          &-imgs
+            @include mixins.container
+            max-width: 50%
+            flex-wrap: nowrap
+            justify-content: center
+            margin: 0 3%
+
+            &-dog-toxic
+              @include mixins.bg-img('icons/toxic.svg')
+              @include mixins.infoContainer
+            
+            &-dog-pet
+              @include mixins.bg-img('icons/pet.svg')
+              @include mixins.infoContainer
+            
+            &-water-1-drop
+              @include mixins.bg-img('icons/1-drop.svg')
+              @include mixins.infoContainer
+            
+            &-water-2-drops
+              @include mixins.bg-img('icons/2-drops.svg')
+              @include mixins.infoContainer
+            
+            &-water-3-drops
+              @include mixins.bg-img('icons/3-drops.svg')
+              @include mixins.infoContainer
+            
+            &-sun-low
+              @include mixins.bg-img('icons/low-sun.svg')
+              @include mixins.infoContainer
+            
+            &-sun-no
+              @include mixins.bg-img('icons/no-sun.svg')
+              @include mixins.infoContainer
 
 .no-show
+  display: none
+
+.no-plants-cards
   display: none

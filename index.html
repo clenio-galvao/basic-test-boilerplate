@@ -9,7 +9,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/script.js"></script>
   </head>
 
   <body>
@@ -35,7 +34,12 @@
               <div class="filters-cards-title"><strong>1.</strong> Set the amount of <strong>sunlight</strong> your plant will get</div>
             </section>
             <section class="filters-cards-card-footer">
-              <select class="filters-cards-sun-select" placeholder="Select..."></select>
+              <select id="filters-cards-sun-select">
+                <option value="">Selecione...</option>
+                <option value="high">Hight</option>
+                <option value="low">Low</option>
+                <option value="no">No</option>
+              </select>
             </section>
           </section>
           <section class="filters-cards-card">
@@ -46,7 +50,12 @@
               <div class="filters-cards-title"><strong>2.</strong> How often do you want to  <strong>water</strong> your plants</div>
             </section>
             <section class="filters-cards-card-footer">
-              <select class="filters-cards-water-select" placeholder="Select..."></select>
+              <select id="filters-cards-water-select">
+                <option value="">Selecione...</option>
+                <option value="rarely">Rarely</option>
+                <option value="regularly">Regularly</option>
+                <option value="daily">Daily</option>
+              </select>
             </section>
           </section>
           <section class="filters-cards-card">
@@ -57,27 +66,38 @@
               <div class="filters-cards-title"><strong>3.</strong> Do you have pets? Do they <strong>chew</strong> plants</div>
             </section>
             <section class="filters-cards-card-footer">
-              <select class="filters-cards-dog-select" placeholder="Select..."></select>
+              <select id="filters-cards-pets-select">
+                <option value="">Selecione...</option>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+              </select>
             </section>
           </section>
         </section>
       </section>
-      <section class="cards">
-        <section class="cards-no-result">
-          <section class="cards-no-result-left">
-            <section class="cards-no-result-left-title">
+      <section class="plants">
+        <section class="plants-no-result">
+          <section class="plants-no-result-left">
+            <section class="plants-no-result-left-title">
               No results yet...
             </section>
-            <section class="cards-no-result-left-text">
+            <section class="plants-no-result-left-text">
               Use the filters above to find the plant best fits your environment :)
             </section>
           </section>
-          <section class="cards-no-result-rigth">
-            <img class="cards-no-result-rigth-img" src="images/illustrations/no-results.png" alt="NoResults" />
+          <section class="plants-no-result-rigth">
+            <img class="plants-no-result-rigth-img" src="images/illustrations/no-results.png" alt="NoResults" />
           </section>
         </section>
-        <section class="cards-plants"></section>
+        <section class="no-plants-cards">
+          <img class="plants-cards-img" src="images/illustrations/pick.png" alt="NoResults" />
+          <section class="plants-cards-text">
+            Our picks for you
+          </section>
+          <section class="plants-cards-container"></section>
+        </section>
       </section>
     </main>
   </body>
+  <script src="js/script.js"></script>
 </html>
