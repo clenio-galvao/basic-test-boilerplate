@@ -113,7 +113,7 @@ const fetchPlants = () => {
         document.querySelector('.plants-cards').className = 'no-plants-cards';
     });
 };
-fetchPlants();
+
 window.onload = function onload() {
   fetchPlants();
 };

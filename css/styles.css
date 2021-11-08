@@ -18,6 +18,12 @@ body {
   background-color: #75BC97;
   height: 420px;
 }
+@media (max-width: 320px) {
+  .header {
+    display: block;
+    height: 550px;
+  }
+}
 .header-leaves {
   background-image: url("../images/hero/desktop/left-leaves.png");
   background-size: 100%;
@@ -26,9 +32,28 @@ body {
   max-width: 55%;
   height: 100%;
 }
+@media (max-width: 320px) {
+  .header-leaves {
+    background-image: url("../images/hero/mobile/mobile-leaves.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+  }
+}
 .header-leaves-info {
   margin: 12% 36%;
   max-width: 50%;
+}
+@media (max-width: 320px) {
+  .header-leaves-info {
+    margin: 6% 10%;
+    max-width: 100%;
+  }
 }
 .header-leaves-info-logo {
   max-width: 50%;
@@ -39,9 +64,20 @@ body {
   font-weight: bold;
   margin-top: 7%;
 }
+@media (max-width: 320px) {
+  .header-leaves-info-title {
+    font-size: 2.3rem;
+    max-width: 80%;
+  }
+}
 .header-leaves-info-arrow {
   margin-top: 5%;
   max-width: 8%;
+}
+@media (max-width: 320px) {
+  .header-leaves-info-arrow {
+    max-width: 13%;
+  }
 }
 .header-plantperson {
   background-image: url("../images/hero/desktop/plantperson.png");
@@ -50,6 +86,20 @@ body {
   background-repeat: no-repeat;
   max-width: 20%;
 }
+@media (max-width: 320px) {
+  .header-plantperson {
+    background-image: url("../images/hero/mobile/mobile-plantperson.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 280px;
+    left: 40px;
+    z-index: 1;
+    height: 270px;
+    max-width: 80%;
+  }
+}
 .header-leaves2 {
   background-image: url("../images/hero/desktop/right-leaves.png");
   background-size: 100%;
@@ -57,10 +107,14 @@ body {
   background-repeat: no-repeat;
   max-width: 23%;
 }
+@media (max-width: 320px) {
+  .header-leaves2 {
+    display: none;
+  }
+}
 
 .filters {
   background-color: #FFFFFF;
-  height: 300px;
 }
 .filters-cards {
   display: flex;
@@ -70,12 +124,21 @@ body {
   max-width: 80%;
   margin-left: 12%;
 }
+@media (max-width: 320px) {
+  .filters-cards {
+    flex-direction: column;
+  }
+}
 .filters-cards-card {
   margin: 4% 4%;
   max-width: 22%;
 }
-.filters-cards-card-header {
-  height: 90px;
+@media (max-width: 320px) {
+  .filters-cards-card {
+    max-width: 100%;
+    margin-left: 0;
+    margin-bottom: 20%;
+  }
 }
 .filters-cards-card-header {
   height: 80px;
@@ -107,15 +170,32 @@ select {
   flex-wrap: nowrap;
   padding-top: 5%;
 }
+@media (max-width: 320px) {
+  .plants-no-result {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .plants-no-result-left {
   margin-left: 25%;
   margin-right: 5%;
   max-width: 30%;
 }
+@media (max-width: 320px) {
+  .plants-no-result-left {
+    margin-left: 10%;
+    max-width: 80%;
+  }
+}
 .plants-no-result-left-title {
   font-size: 3rem;
   font-weight: bold;
   margin-top: 5%;
+}
+@media (max-width: 320px) {
+  .plants-no-result-left-title {
+    font-size: 2.5rem;
+  }
 }
 .plants-no-result-left-text {
   font-size: 1.2rem;
@@ -124,12 +204,20 @@ select {
   max-width: 55%;
   line-height: 2rem;
 }
-.plants-no-result-rigth {
-  align-items: center;
+@media (max-width: 320px) {
+  .plants-no-result-left-text {
+    max-width: 100%;
+  }
 }
 .plants-no-result-rigth-img {
   max-width: 20%;
   margin-bottom: 5%;
+}
+@media (max-width: 320px) {
+  .plants-no-result-rigth-img {
+    margin-left: 130px;
+    margin-top: 40px;
+  }
 }
 .plants-cards {
   display: flex;
@@ -137,9 +225,19 @@ select {
   flex-wrap: wrap;
   padding: 0 20%;
 }
+@media (max-width: 320px) {
+  .plants-cards {
+    padding: 0 10%;
+  }
+}
 .plants-cards-img {
   margin: 5% 0 0;
   max-width: 20%;
+}
+@media (max-width: 320px) {
+  .plants-cards-img {
+    max-width: 50%;
+  }
 }
 .plants-cards-text {
   color: #15573F;
@@ -153,6 +251,12 @@ select {
   grid-template-rows: auto;
   grid-gap: 2%;
 }
+@media (max-width: 320px) {
+  .plants-cards-container {
+    grid-template-columns: 1fr;
+    grid-gap: 1%;
+  }
+}
 .plants-cards-container-card-favorite {
   display: flex;
   justify-content: space-between;
@@ -164,6 +268,12 @@ select {
   grid-column: 1/span 2;
   grid-row: 1/span 2;
 }
+@media (max-width: 320px) {
+  .plants-cards-container-card-favorite {
+    grid-column: 1/span 1;
+    grid-row: 1/span 1;
+  }
+}
 .plants-cards-container-card-favorite-img {
   max-width: 60%;
 }
@@ -172,6 +282,11 @@ select {
   color: #15573F;
   font-weight: bold;
   margin: 5% 0 0 5%;
+}
+@media (max-width: 320px) {
+  .plants-cards-container-card-favorite-title {
+    font-size: 1.2rem;
+  }
 }
 .plants-cards-container-card-favorite-price {
   margin: 2%;
@@ -187,6 +302,7 @@ select {
   margin: 1%;
   border-radius: 10px;
   justify-content: center;
+  height: 300px;
 }
 .plants-cards-container-card-img {
   max-width: 60%;
@@ -227,6 +343,11 @@ select {
   flex-wrap: nowrap;
   justify-content: center;
   margin: 0 3%;
+}
+@media (max-width: 320px) {
+  .plants-cards-container-card-more-info-imgs {
+    max-width: 40%;
+  }
 }
 .plants-cards-container-card-more-info-imgs-dog-toxic {
   background-image: url("../images/icons/toxic.svg");
