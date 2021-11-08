@@ -8,10 +8,96 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./index.scss" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
-    <img src="images/icons/logo-white.svg" alt="Greenthumb" />
+    <header class="header">
+      <section class="header-leaves">
+        <section class="header-leaves-info">
+          <img class="header-leaves-info-logo" src="images/icons/logo-white.svg" alt="Greenthumb" />
+          <div class="header-leaves-info-title">Find your next green friend</div>
+          <img class="header-leaves-info-arrow" src="images/icons/arrow-down.svg" alt="ArrowDown" />
+        </section>
+      </section>
+      <div class="header-plantperson"></div>
+      <div class="header-leaves2"></div>
+    </header>
+    <main>
+      <section class="filters">
+        <section class="filters-cards">
+          <section class="filters-cards-card">
+            <section class="filters-cards-card-header">
+              <img class="filters-cards-img" src="images/illustrations/sun.png" alt="Sun" />
+            </section>
+            <section class="filters-cards-card-content">
+              <div class="filters-cards-title"><strong>1.</strong> Set the amount of <strong>sunlight</strong> your plant will get</div>
+            </section>
+            <section class="filters-cards-card-footer">
+              <select id="filters-cards-sun-select">
+                <option value="">Selecione...</option>
+                <option value="high">Hight</option>
+                <option value="low">Low</option>
+                <option value="no">No</option>
+              </select>
+            </section>
+          </section>
+          <section class="filters-cards-card">
+            <section class="filters-cards-card-header">
+              <img class="filters-cards-img" src="images/illustrations/wateringcan.png" alt="WateringCan" />
+            </section>
+            <section class="filters-cards-card-content">
+              <div class="filters-cards-title"><strong>2.</strong> How often do you want to  <strong>water</strong> your plants</div>
+            </section>
+            <section class="filters-cards-card-footer">
+              <select id="filters-cards-water-select">
+                <option value="">Selecione...</option>
+                <option value="rarely">Rarely</option>
+                <option value="regularly">Regularly</option>
+                <option value="daily">Daily</option>
+              </select>
+            </section>
+          </section>
+          <section class="filters-cards-card">
+            <section class="filters-cards-card-header">
+              <img class="filters-cards-img" src="images/illustrations/dog.png" alt="Dog" />
+            </section>
+            <section class="filters-cards-card-content">
+              <div class="filters-cards-title"><strong>3.</strong> Do you have pets? Do they <strong>chew</strong> plants</div>
+            </section>
+            <section class="filters-cards-card-footer">
+              <select id="filters-cards-pets-select">
+                <option value="">Selecione...</option>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+              </select>
+            </section>
+          </section>
+        </section>
+      </section>
+      <section class="plants">
+        <section class="plants-no-result">
+          <section class="plants-no-result-left">
+            <section class="plants-no-result-left-title">
+              No results yet...
+            </section>
+            <section class="plants-no-result-left-text">
+              Use the filters above to find the plant best fits your environment :)
+            </section>
+          </section>
+          <section class="plants-no-result-rigth">
+            <img class="plants-no-result-rigth-img" src="images/illustrations/no-results.png" alt="NoResults" />
+          </section>
+        </section>
+        <section class="no-plants-cards">
+          <img class="plants-cards-img" src="images/illustrations/pick.png" alt="NoResults" />
+          <section class="plants-cards-text">
+            Our picks for you
+          </section>
+          <section class="plants-cards-container"></section>
+        </section>
+      </section>
+    </main>
   </body>
+  <script src="js/script.js"></script>
 </html>

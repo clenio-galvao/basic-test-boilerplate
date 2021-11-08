@@ -1,0 +1,424 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+body {
+  background-color: #F2F2F2;
+  color: #797979;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #75BC97;
+  height: 420px;
+}
+@media (max-width: 320px) {
+  .header {
+    display: block;
+    height: 550px;
+  }
+}
+.header-leaves {
+  background-image: url("../images/hero/desktop/left-leaves.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 55%;
+  height: 100%;
+}
+@media (max-width: 320px) {
+  .header-leaves {
+    background-image: url("../images/hero/mobile/mobile-leaves.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+  }
+}
+.header-leaves-info {
+  margin: 12% 36%;
+  max-width: 50%;
+}
+@media (max-width: 320px) {
+  .header-leaves-info {
+    margin: 6% 10%;
+    max-width: 100%;
+  }
+}
+.header-leaves-info-logo {
+  max-width: 50%;
+}
+.header-leaves-info-title {
+  color: #FFFFFF;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-top: 7%;
+}
+@media (max-width: 320px) {
+  .header-leaves-info-title {
+    font-size: 2.3rem;
+    max-width: 80%;
+  }
+}
+.header-leaves-info-arrow {
+  margin-top: 5%;
+  max-width: 8%;
+}
+@media (max-width: 320px) {
+  .header-leaves-info-arrow {
+    max-width: 13%;
+  }
+}
+.header-plantperson {
+  background-image: url("../images/hero/desktop/plantperson.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 20%;
+}
+@media (max-width: 320px) {
+  .header-plantperson {
+    background-image: url("../images/hero/mobile/mobile-plantperson.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 280px;
+    left: 40px;
+    z-index: 1;
+    height: 270px;
+    max-width: 80%;
+  }
+}
+.header-leaves2 {
+  background-image: url("../images/hero/desktop/right-leaves.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 23%;
+}
+@media (max-width: 320px) {
+  .header-leaves2 {
+    display: none;
+  }
+}
+
+.filters {
+  background-color: #FFFFFF;
+}
+.filters-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 80%;
+  margin-left: 12%;
+}
+@media (max-width: 320px) {
+  .filters-cards {
+    flex-direction: column;
+  }
+}
+.filters-cards-card {
+  margin: 4% 4%;
+  max-width: 22%;
+}
+@media (max-width: 320px) {
+  .filters-cards-card {
+    max-width: 100%;
+    margin-left: 0;
+    margin-bottom: 20%;
+  }
+}
+.filters-cards-card-header {
+  height: 80px;
+}
+.filters-cards-img {
+  max-width: 30%;
+}
+.filters-cards-title {
+  margin-bottom: 7%;
+  margin-top: 5%;
+}
+
+select {
+  background-color: #F2F2F2;
+  border: 1px solid #A8A8A8;
+  border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
+  height: 40px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(../images/icons/fill8.png) no-repeat center right;
+}
+
+.plants-no-result {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  padding-top: 5%;
+}
+@media (max-width: 320px) {
+  .plants-no-result {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.plants-no-result-left {
+  margin-left: 25%;
+  margin-right: 5%;
+  max-width: 30%;
+}
+@media (max-width: 320px) {
+  .plants-no-result-left {
+    margin-left: 10%;
+    max-width: 80%;
+  }
+}
+.plants-no-result-left-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 5%;
+}
+@media (max-width: 320px) {
+  .plants-no-result-left-title {
+    font-size: 2.5rem;
+  }
+}
+.plants-no-result-left-text {
+  font-size: 1.2rem;
+  font-weight: light;
+  margin-top: 5%;
+  max-width: 55%;
+  line-height: 2rem;
+}
+@media (max-width: 320px) {
+  .plants-no-result-left-text {
+    max-width: 100%;
+  }
+}
+.plants-no-result-rigth-img {
+  max-width: 20%;
+  margin-bottom: 5%;
+}
+@media (max-width: 320px) {
+  .plants-no-result-rigth-img {
+    margin-left: 130px;
+    margin-top: 40px;
+  }
+}
+.plants-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20%;
+}
+@media (max-width: 320px) {
+  .plants-cards {
+    padding: 0 10%;
+  }
+}
+.plants-cards-img {
+  margin: 5% 0 0;
+  max-width: 20%;
+}
+@media (max-width: 320px) {
+  .plants-cards-img {
+    max-width: 50%;
+  }
+}
+.plants-cards-text {
+  color: #15573F;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+.plants-cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 2%;
+}
+@media (max-width: 320px) {
+  .plants-cards-container {
+    grid-template-columns: 1fr;
+    grid-gap: 1%;
+  }
+}
+.plants-cards-container-card-favorite {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #FFFFFF;
+  margin: 1%;
+  border-radius: 10px;
+  justify-content: center;
+  grid-column: 1/span 2;
+  grid-row: 1/span 2;
+}
+@media (max-width: 320px) {
+  .plants-cards-container-card-favorite {
+    grid-column: 1/span 1;
+    grid-row: 1/span 1;
+  }
+}
+.plants-cards-container-card-favorite-img {
+  max-width: 60%;
+}
+.plants-cards-container-card-favorite-title {
+  font-size: 2rem;
+  color: #15573F;
+  font-weight: bold;
+  margin: 5% 0 0 5%;
+}
+@media (max-width: 320px) {
+  .plants-cards-container-card-favorite-title {
+    font-size: 1.2rem;
+  }
+}
+.plants-cards-container-card-favorite-price {
+  margin: 2%;
+  color: #15573F;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.plants-cards-container-card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #FFFFFF;
+  margin: 1%;
+  border-radius: 10px;
+  justify-content: center;
+  height: 300px;
+}
+.plants-cards-container-card-img {
+  max-width: 60%;
+}
+.plants-cards-container-card-title {
+  margin: 2%;
+  color: #15573F;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 5%;
+}
+.plants-cards-container-card-price {
+  margin: 2%;
+  color: #15573F;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.plants-cards-container-card-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 70%;
+  justify-content: center;
+}
+.plants-cards-container-card-more-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 0 3%;
+}
+.plants-cards-container-card-more-info-imgs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 50%;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 0 3%;
+}
+@media (max-width: 320px) {
+  .plants-cards-container-card-more-info-imgs {
+    max-width: 40%;
+  }
+}
+.plants-cards-container-card-more-info-imgs-dog-toxic {
+  background-image: url("../images/icons/toxic.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  margin-right: 10px;
+  height: 90%;
+}
+.plants-cards-container-card-more-info-imgs-dog-pet {
+  background-image: url("../images/icons/pet.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  margin-right: 10px;
+  height: 90%;
+}
+.plants-cards-container-card-more-info-imgs-water-1-drop {
+  background-image: url("../images/icons/1-drop.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  margin-right: 10px;
+  height: 90%;
+}
+.plants-cards-container-card-more-info-imgs-water-2-drops {
+  background-image: url("../images/icons/2-drops.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  margin-right: 10px;
+  height: 90%;
+}
+.plants-cards-container-card-more-info-imgs-water-3-drops {
+  background-image: url("../images/icons/3-drops.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  margin-right: 10px;
+  height: 90%;
+}
+.plants-cards-container-card-more-info-imgs-sun-low {
+  background-image: url("../images/icons/low-sun.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  margin-right: 10px;
+  height: 90%;
+}
+.plants-cards-container-card-more-info-imgs-sun-no {
+  background-image: url("../images/icons/no-sun.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  margin-right: 10px;
+  height: 90%;
+}
+
+.no-show {
+  display: none;
+}
+
+.no-plants-cards {
+  display: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

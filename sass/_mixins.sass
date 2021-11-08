@@ -1,0 +1,27 @@
+@use 'variables'
+
+@mixin container
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+
+@mixin bg-img($img)
+  background-image: url('../images/#{$img}')
+  background-size: 100%
+  background-position: center
+  background-repeat: no-repeat
+
+@mixin infoContainer
+  width: 30px
+  margin-right: 10px
+  height: 90%
+
+@mixin textContainer
+  margin: 2%
+  color: variables.$text-color-cards
+  font-size: 1.2rem
+  font-weight: bold
+
+@mixin mobile
+  @media(max-width: 320px)
+    @content
